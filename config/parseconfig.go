@@ -14,7 +14,7 @@ type Config struct {
 }
 
 func Parse() Config {
-	JsonConfig, err := os.Open("./config.json")
+	JsonConfig, err := os.Open(".\\config\\config.json")
 	config := Config{}
 	//if config failed, by default use test mod
 	if err != nil {
